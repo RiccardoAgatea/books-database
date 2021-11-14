@@ -6,6 +6,12 @@
 #  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  book_id    :bigint
+#  position   :integer
+#
+# Indexes
+#
+#  index_volumes_on_book_id  (book_id)
 #
 require 'rails_helper'
 

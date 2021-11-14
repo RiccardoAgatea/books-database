@@ -1,5 +1,6 @@
 ActiveAdmin.register Book do
-  permit_params :title, :price, :print_year, :editor_id, author_ids: []
+  permit_params :title, :price, :print_year, :editor_id, author_ids: [],
+                                                         volumes_attributes: %i[title position]
 
   index do
     selectable_column
@@ -16,6 +17,11 @@ ActiveAdmin.register Book do
       row :print_year
       row :editor
       row :authors
+
+      table_for book.volumes do
+        column :title
+        column :position
+      end
     end
   end
 
@@ -26,6 +32,12 @@ ActiveAdmin.register Book do
     f.input :editor
     f.input :authors, as: :select, input_html: { multiple: true },
                       collection: Author.all.sort_by(&:full_name)
+    f.inputs do
+      f.has_many :volumes, allow_destroy: true do |v|
+        v.input :title
+        v.input :position
+      end
+    end
     f.actions
   end
 end

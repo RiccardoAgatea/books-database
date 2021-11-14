@@ -20,4 +20,7 @@ class Book < ApplicationRecord
 
   belongs_to :editor
   has_and_belongs_to_many :authors
+  has_many :volumes, dependent: :destroy
+
+  accepts_nested_attributes_for :volumes, allow_destroy: true
 end

@@ -41,6 +41,7 @@ it:
         name: Nome
       volume:
         title: Titolo
+        position: Posizione
       series:
         name: Nome
       book:
