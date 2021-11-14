@@ -25,6 +25,9 @@ it:
       series:
         one: Serie
         other: Serie
+      book:
+        one: Libro
+        other: Libri
     attributes:
       user:
         name: Nome
@@ -40,6 +43,10 @@ it:
         title: Titolo
       series:
         name: Nome
+      book:
+        title: Titolo
+        price: Prezzo
+        print_year: Anno di Stampa
     errors:
       models:
         user:
