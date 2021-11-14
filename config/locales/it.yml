@@ -48,6 +48,7 @@ it:
         price: Prezzo
         print_year: Anno di Stampa
         editor: Casa Editrice
+        authors: Autori
     errors:
       models:
         user:
