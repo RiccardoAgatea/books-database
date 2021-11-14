@@ -1,0 +1,26 @@
+it:
+  date:
+    formats:
+      long: "%d-%m-%Y"
+  time:
+    formats:
+      long: "%m-%d-%Y %H:%M:%S"
+  activerecord:
+    models:
+      user:
+        one: Utente
+        other: Utenti
+    attributes:
+      user:
+        name: Nome
+    errors:
+      models:
+        user:
+          attributes:
+
+  active_admin:
+    devise:
+      login:
+        title: ''
+    dashboard_welcome:
+      welcome: Benvenuto nella piattaforma Libri.
