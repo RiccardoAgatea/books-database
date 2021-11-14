@@ -16,7 +16,7 @@
 #
 class Book < ApplicationRecord
   validates :title, presence: true
-  validates :price, numericality: { greater_than_or_equal_to: 0 }
+  validates :price, numericality: { greater_than_or_equal_to: 0 }, allow_nil: true
 
   belongs_to :editor
   has_and_belongs_to_many :authors
