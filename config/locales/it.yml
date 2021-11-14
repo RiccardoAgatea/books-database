@@ -16,6 +16,9 @@ it:
       author:
         one: Autore
         other: Autori
+      location:
+        one: Location
+        other: Location
     attributes:
       user:
         name: Nome
@@ -25,6 +28,8 @@ it:
         name: Nome
         surname: Cognome
         full_name: Nome Completo
+      location:
+        name: Nome
     errors:
       models:
         user:
