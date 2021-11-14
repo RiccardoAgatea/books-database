@@ -229,7 +229,7 @@ GEM
       responders (>= 2, < 4)
     isolator (0.7.0)
       sniffer (>= 0.3.1)
-    jbuilder (2.11.2)
+    jbuilder (2.11.3)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
     jquery-rails (4.4.0)
@@ -537,7 +537,7 @@ DEPENDENCIES
   whenever
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.8p205
 
 BUNDLED WITH
    1.17.3
