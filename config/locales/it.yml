@@ -22,6 +22,9 @@ it:
       volume:
         one: Volume
         other: Volume
+      series:
+        one: Serie
+        other: Serie
     attributes:
       user:
         name: Nome
@@ -35,6 +38,8 @@ it:
         name: Nome
       volume:
         title: Titolo
+      series:
+        name: Nome
     errors:
       models:
         user:
