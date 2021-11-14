@@ -14,7 +14,7 @@
 #  index_volumes_on_book_id  (book_id)
 #
 class Volume < ApplicationRecord
-  validates :title, :postion, presence: true
+  validates :title, :position, presence: true
 
   belongs_to :book
 end

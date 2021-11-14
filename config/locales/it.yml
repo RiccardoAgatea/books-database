@@ -21,13 +21,16 @@ it:
         other: Location
       volume:
         one: Volume
-        other: Volume
+        other: Volumi
       series:
         one: Serie
         other: Serie
       book:
         one: Libro
         other: Libri
+      series_association:
+        one: Serie
+        other: Serie
     attributes:
       user:
         name: Nome
@@ -50,6 +53,10 @@ it:
         print_year: Anno di Stampa
         editor: Casa Editrice
         authors: Autori
+      series_association:
+        position: Posizione
+        series: Serie
+        book: Libro
     errors:
       models:
         user:

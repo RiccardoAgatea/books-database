@@ -9,4 +9,7 @@
 #
 class Series < ApplicationRecord
   validates :name, presence: true
+
+  has_many :series_associations, dependent: :destroy
+  has_many :books, through: :series_associations
 end

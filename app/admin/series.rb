@@ -11,6 +11,10 @@ ActiveAdmin.register Series do
   show do
     attributes_table do
       row :name
+
+      table_for series.books.sort_by(&:position) do
+        column I18n.translate('activerecord.attributes.book.title'), :title
+      end
     end
   end
 end
