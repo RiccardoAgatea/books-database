@@ -13,11 +13,18 @@ it:
       editor:
         one: Casa Editrice
         other: Case Editrici
+      author:
+        one: Autore
+        other: Autori
     attributes:
       user:
         name: Nome
       editor:
         name: Nome
+      author:
+        name: Nome
+        surname: Cognome
+        full_name: Nome Completo
     errors:
       models:
         user:
