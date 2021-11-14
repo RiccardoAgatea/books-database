@@ -1,5 +1,5 @@
 ActiveAdmin.register Book do
-  permit_params :title, :price, :print_year
+  permit_params :title, :price, :print_year, :editor_id
 
   index do
     selectable_column
@@ -13,6 +13,15 @@ ActiveAdmin.register Book do
       row :title
       row :price
       row :print_year
+      row :editor
     end
+  end
+
+  form do |f|
+    f.input :title
+    f.input :price
+    f.input :print_year
+    f.input :editor
+    f.actions
   end
 end

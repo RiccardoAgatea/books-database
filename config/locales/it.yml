@@ -47,6 +47,7 @@ it:
         title: Titolo
         price: Prezzo
         print_year: Anno di Stampa
+        editor: Casa Editrice
     errors:
       models:
         user:
