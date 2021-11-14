@@ -19,6 +19,9 @@ it:
       location:
         one: Location
         other: Location
+      volume:
+        one: Volume
+        other: Volume
     attributes:
       user:
         name: Nome
@@ -30,6 +33,8 @@ it:
         full_name: Nome Completo
       location:
         name: Nome
+      volume:
+        title: Titolo
     errors:
       models:
         user:
